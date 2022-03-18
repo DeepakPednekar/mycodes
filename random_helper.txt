@@ -1,0 +1,5 @@
+# delete hapx files
+ls hap*.gz | xargs -I{} rm {}
+
+# erlang version
+ erl -eval 'erlang:display(erlang:system_info(otp_release)), halt().'  -noshell
